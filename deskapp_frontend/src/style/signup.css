@@ -1,0 +1,72 @@
+
+.form1{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    position: relative;
+    width: 65%;
+    padding-top:5px;
+    padding-bottom: 5px; 
+}
+.text-muted{
+    font-weight: 500;
+    text-align: center;
+}
+.main1{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-left:15%;
+    margin-right:15%;
+    margin-top:5%;
+    padding:30px 30px 30px 0;
+    
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1), 
+                0 0 20px rgba(0, 0, 0, 0.1), 
+                0 0 20px rgba(0, 0, 0, 0.1), 
+                0 0 20px rgba(0, 0, 0, 0.1);
+}
+.image{
+    width:300px;
+    height:300px;
+    object-fit: cover;
+}
+.img1{
+    width:35%;
+    position: relative;
+    text-align: left;
+    left:0;
+    
+}
+.row{
+    display: flex;
+}
+.btn{
+    border: 2px solid var(--primary-color);
+    font-weight: 500;
+    background-color: var(--primary-color);
+}
+.btn:active{
+    background-color:var(--primary-color) !important;
+    border: 2px solid var(--primary-color) !important;
+}
+.btn:hover{
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+}
+.card-title{
+    font-size: xx-large;
+    font-weight: 700;
+}
+@media (max-width:1199px) {
+    .main1{
+        display: flex;
+        flex-direction: column;
+        padding:10px 10px 10px 0;
+    }
+    .image{
+        width:150px;
+        height: 150px;
+        object-fit: cover;
+    }
+}

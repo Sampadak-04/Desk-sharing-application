@@ -1,0 +1,125 @@
+.sec{
+    display: flex;
+    gap:5%;
+}
+.sec1{
+    min-width: 15%;
+    margin-left:2.5%;
+}
+.grid-container1{
+    display: flex;
+}
+.grid1{
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+}
+.grid-container2{
+    display: flex;
+}
+.grid2{
+    padding: 1px;
+}
+.grid-container3{
+    display: flex;
+}
+.grid3{
+    padding:6px;
+    display: flex;
+  flex-direction: column;
+}
+.circle{
+    display: flex;
+}
+.circle1{
+    position: relative;
+    margin-bottom:10px;
+}
+.circle2{
+    position: relative;
+    margin-bottom:10px;
+
+}
+.main-circle2{
+    margin-top:15%;
+}
+.circle3{
+    display: flex;
+}
+.circle-desk1{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+}
+.circle-desk2{
+    position: relative;
+    text-align: center;
+}
+.btn-square-md{
+    width: 45px;
+    height: 45px;
+    margin-right: 1%;
+    margin-bottom: 10px;
+    background-color: var(--secondary-color);
+}
+.btn-square-md:disabled{
+    background-color:wheat;
+    border-color: var(--primary-color);
+}
+.entry{
+    color: var(--primary-color);
+    font-weight: 500;
+    padding:5px;
+    font-size: large;
+    position: absolute;
+    right:0;
+    top:325px;
+    transform: rotate(90deg);
+}
+.entry::before{
+    content:' | '
+}
+.entry::after{
+    content: ' | ';
+}
+.sec-heading{
+    color: var(--primary-color);
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    padding:5px;
+    font-size: large;
+}
+@media (max-width: 1199px){
+    .sec{
+        display: flex;
+        flex-direction: column;
+    }
+    .grid1{
+        display: flex;
+        flex-direction: column;
+      }
+}
+@media (max-width: 768px) {
+    .sec{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-square-md{
+        width: 25px;
+        height: 25px;
+        font-size: x-small;
+        text-align: center;
+        margin-right: 1%;
+        margin-bottom: 10px;
+    }
+    .grid1{
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+    }
+    .grid2{
+        padding: 5px;
+    }
+}

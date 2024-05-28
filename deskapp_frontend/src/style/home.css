@@ -1,0 +1,35 @@
+.main{
+    display: flex;
+    position: relative;
+    align-items: center;
+    max-width: 80%;
+    padding:30px 40px 30px 40px;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top:5%;
+    
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1), 
+                0 0 20px rgba(0, 0, 0, 0.1), 
+                0 0 20px rgba(0, 0, 0, 0.1), 
+                0 0 20px rgba(0, 0, 0, 0.1);
+}
+.head-text{
+    text-align: left;
+}
+.heading1{
+    padding: 10px;
+    color:black;
+    font-weight: 700;
+    font-size: 45px;
+}
+.desk-btn{
+    position:relative;
+    text-align: left;
+    padding-top:10px;
+}
+@media (max-width: 1199px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+}

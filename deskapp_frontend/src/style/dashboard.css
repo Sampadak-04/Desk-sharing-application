@@ -1,0 +1,53 @@
+.dash-content{
+    color:var(--primary-color);
+    padding:2%;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.date-picker{
+    position: relative;
+    display: flex;
+    font-size: large;
+    font-weight: 500;
+    color:black;
+}
+.content-card{  
+    padding: 20px;
+    position: relative;
+    margin-left:15%;
+    margin-right: 15%;
+}
+.card{
+    position:relative;
+    margin-top:5%;
+    min-height: 500px;
+}
+.pdate{
+    color:black ;
+}
+.picker-parent{
+    padding: 5px;
+}
+.picker{
+    position: relative;
+    margin-left:15%;
+    padding: 5px;
+    width:300%;
+}
+.section-picker{
+    position: relative;
+    font-size: large;
+    font-weight: 500;
+    color:black;
+}
+.table{
+    border-color:var(--primary-color);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width:92%;
+
+}
