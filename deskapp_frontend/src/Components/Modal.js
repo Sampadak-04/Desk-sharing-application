@@ -103,7 +103,7 @@ const Modal = ({ onClose, date1, date2, deskId }) => {
                         </p>
                         {(bookedDates.length !== 0) ? (
                             <p>
-                                Do you want to book only for available seats? <button className='btn btn-primary' onClick={bookDeskAvailable}>Click here</button>
+                                Do you want to book for available dates? <button className='btn btn-primary' onClick={bookDeskAvailable}>Click here</button>
                             </p>)
                             : ''}
                     </div>

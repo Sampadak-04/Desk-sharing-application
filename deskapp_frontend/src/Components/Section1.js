@@ -9,10 +9,10 @@ const Section1 = () => {
   const [deskId,setDeskId] = useState('');
   const [firstDate,setFirstDate] = useState('')
   const [lastDate, setLastDate] = useState('')
-
   const location = useLocation();
   const date1 = location.state ? location.state.date1 : null;
   const date2 = location.state ? location.state.date2 : null;
+  let cnt1 = 0;
   
   const openModal = (deskId) => {
     setDeskId(deskId);
@@ -64,22 +64,22 @@ const Section1 = () => {
               {numbers1.map((item) => (
                 <div className='grid1'>
                   <button className='btn btn-primary btn-square-md' key={'1a.r1.'+item}
-                    disabled>
+                    disabled>{++cnt1}
                   </button>
                   <button className='btn btn-primary btn-square-md' key={'1a.r2.'+item}
-                    disabled>
+                    disabled>{cnt1 + 20}
                   </button>
                   <button className='btn btn-primary btn-square-md' key={'1a.r3.'+item}
-                    disabled>
+                    disabled>{cnt1 + 40}
                   </button>
                   <button className='btn btn-primary btn-square-md' key={'1a.r4.'+item}
-                    disabled>
+                    disabled>{cnt1 + 60}
                   </button>
                   <button className='btn btn-primary btn-square-md' key={'1a.r5.'+item}
-                    disabled>
+                    disabled>{cnt1 + 80}
                   </button>
                   <button className='btn btn-primary btn-square-md' key={'1a.r6.'+item}
-                    disabled>
+                    disabled>{cnt1 + 100}
                   </button>
                 </div>
               ))}
@@ -93,23 +93,23 @@ const Section1 = () => {
                 
                 <div className='grid2'>
                   <button className='btn btn-primary btn-square-md' key={'1b.r1.'+item}
-                    disabled={item < 7 || isKeyDisabled('1b.r1.'+item)} onClick={() => openModal('1b.r1.'+item)}>
+                    disabled={item < 7 || isKeyDisabled('1b.r1.'+item)} onClick={() => openModal('1b.r1.'+item)}>{++cnt1}
                   </button>
                   
                     <button className='btn btn-primary btn-square-md' key={'1b.r2.'+item}
-                      disabled={item < 7 || isKeyDisabled('1b.r2.'+item)} onClick={() => openModal('1b.r2.'+item)}>
+                      disabled={item < 7 || isKeyDisabled('1b.r2.'+item)} onClick={() => openModal('1b.r2.'+item)}>{cnt1 + 20}
                     </button>
                     <button className='btn btn-primary btn-square-md' key={'1b.r3.'+item}
-                      disabled={item < 7 || item === 10 || item === 11 || isKeyDisabled('1b.r3.'+item)} onClick={() => openModal('1b.r3.'+item)}>
+                      disabled={item < 7 || item === 10 || item === 11 || isKeyDisabled('1b.r3.'+item)} onClick={() => openModal('1b.r3.'+item)}>{cnt1 + 40}
                     </button>
                     <button className='btn btn-primary btn-square-md' key={'1b.r4.'+item}
-                      disabled={item < 7 || item === 10 || item === 11 || isKeyDisabled('1b.r4.'+item)} onClick={() => openModal('1b.r4.'+item)}>
+                      disabled={item < 7 || item === 10 || item === 11 || isKeyDisabled('1b.r4.'+item)} onClick={() => openModal('1b.r4.'+item)}>{cnt1 + 60}
                     </button>
                     <button className='btn btn-primary btn-square-md' key={'1b.r5.'+item}
-                      disabled={item < 7 || item === 11 || isKeyDisabled('1b.r5.'+item)} onClick={() => openModal('1b.r5.'+item)}>
+                      disabled={item < 7 || item === 11 || isKeyDisabled('1b.r5.'+item)} onClick={() => openModal('1b.r5.'+item)}>{cnt1 + 80}
                     </button>
                     <button className='btn btn-primary btn-square-md' key={'1b.r6.'+item}
-                      disabled={item < 7} onClick={() => openModal('1b.r6.'+item)}>
+                      disabled={item < 7} onClick={() => openModal('1b.r6.'+item)}>{cnt1 + 100}
                     </button>
                     
                   </div>
